@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="inputPanel">
+
+      <H1>RGB</H1>
+
+      <div id="input">
+
+        <div id="red">
+          <div class="title">R:</div>
+          <input type="text" class="input" placeholder="0~255">
+          <div class="color"></div>
+        </div>
+
+        <div id="green">
+          <div class="title">G:</div>
+          <input type="text" class="input" placeholder="0~255">
+          <div class="color"></div>
+        </div>
+
+        <div id="blue">
+          <div class="title">B:</div>
+          <input type="text" class="input" placeholder="0~255">
+          <div class="color"></div>
+        </div>
+
+      </div>
+
+      <button id="convertColor">Convert</button>
+
+    </div>
+
+    <div id="showColor">
+      <H1>HEX</H1>
+      <input type="text">
+      <div class="color"></div>
+    </div>
+  </div>
+
+  <div id="containerForSlider">
+    <div id="sliderForR">
+      <div class="title">R</div>
+      <input type="range" min="0" max="255" value="0" class="slider" id="sliderR">
+      <div class="color">0</div>
+    </div>
+    <div id="sliderForG">
+      <div class="title">G</div>
+      <input type="range" min="0" max="255" value="0" class="slider" id="sliderG">
+      <div class="color">0</div>
+    </div>
+    <div id="sliderForB">
+      <div class="title">B</div>
+      <input type="range" min="0" max="255" value="0" class="slider" id="sliderB">
+      <div class="color">0</div>
+    </div>
+    <input type="text" class="input" id="inputForRGB" placeholder="#000000">
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
